@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart - Kusina Express</title>
+
+    <link rel="stylesheet" type="text/css" href="cartstyle.css">
+    <link rel="icon" type="image/icon" href="images/kusinaexpresslogo.png">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html"><img src="images/kusinaexpresslogo.png" alt="Kusina Express Logo" class="logo-img"></a>
+        </div>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger" aria-label="Toggle Navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+
+        <!--Main Navigation Bar Section-->
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="cart.html" class="active">CART</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Added to Cart Items Section -->
+    <main class="cart-container">
+      <div class="cart-card">
+        
+        <div id="cartContentWrapper">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th class="th-remove"></th>
+                <th class="th-product">PRODUCT</th>
+                <th class="th-price">PRICE</th>
+                <th class="th-qty">QUANTITY</th>
+                <th class="th-subtotal">SUBTOTAL</th>
+              </tr>
+            </thead>
+
+            <tbody id="cartTableBody">
+              <tr>
+                <td class="cell-remove"><button type="button" class="remove-btn">✕</button></td>
+                <td class="cell-product">
+                  <div class="product-info">
+                    <img src="images/sisig.png" alt="Pork Sisig" class="dish-thumb">
+                    <span class="product-name">Pork Sisig</span>
+                  </div>
+                </td>
+                <td class="cell-price">₱70.00</td>
+                <td class="cell-qty"><input type="number" name="quantity" value="2" min="1" max="99" class="qty-input"></td>
+                <td class="cell-subtotal">₱140.00</td>
+              </tr>
+
+              <tr>
+                <td class="cell-remove"><button type="button" class="remove-btn">✕</button></td>
+                <td class="cell-product">
+                  <div class="product-info">
+                    <img src="images/papaitan.jpg" alt="Papaitan" class="dish-thumb">
+                    <span class="product-name">Papaitan</span>
+                  </div>
+                </td>
+                <td class="cell-price">₱80.00</td>
+                <td class="cell-qty"><input type="number" name="quantity" value="1" min="1" max="99" class="qty-input"></td>
+                <td class="cell-subtotal">₱80.00</td>
+              </tr>
+
+              <tr>
+                <td class="cell-remove">
+                  <button type="button" class="remove-btn">✕</button>
+                </td>
+                <td class="cell-product">
+                  <div class="product-info">
+                    <img src="images/royal.jpg" alt="Royal" class="dish-thumb">
+                    <span class="product-name">Royal Tru Orange 500ml</span>
+                  </div>
+                </td>
+                <td class="cell-price">₱35.00</td>
+                <td class="cell-qty"><input type="number" name="quantity" value="1" min="1" max="99" class="qty-input"></td>
+                <td class="cell-subtotal">₱35.00</td>
+              </tr>
+
+              <tr>
+                <td class="cell-remove">
+                  <button type="button" class="remove-btn">✕</button>
+                </td>
+                <td class="cell-product">
+                  <div class="product-info">
+                    <img src="images/coca-cola.jpg" alt="Coca-Cola" class="dish-thumb">
+                    <span class="product-name">Coca-Cola Original 500ml</span>
+                  </div>
+                </td>
+                <td class="cell-price">₱35.00</td>
+                <td class="cell-qty"><input type="number" name="quantity" value="1" min="1" max="99" class="qty-input"></td>
+                <td class="cell-subtotal">₱35.00</td>
+              </tr>
+
+              <tr>
+                <td class="cell-remove">
+                  <button type="button" class="remove-btn">✕</button>
+                </td>
+                <td class="cell-product">
+                  <div class="product-info">
+                    <img src="images/plainrice.jpg" alt="Plain Rice" class="dish-thumb">
+                    <span class="product-name">Plain Rice</span>
+                  </div>
+                </td>
+                <td class="cell-price">₱15.00</td>
+                <td class="cell-qty">
+                  <input type="number" name="quantity" value="3" min="1" max="99" class="qty-input">
+                </td>
+                <td class="cell-subtotal">₱45.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Cart Total  Section -->
+        <div class="cart-card-footer">
+          <a href="menu.html" class="btn-action btn-menu">BACK TO MENU</a>
+          <button type="button" id="clearAllBtn" class="btn-action btn-clear">CLEAR ALL</button>
+        </div>
+      </div>
+
+      <section class="cart-summary-section">
+        <h2>CART TOTAL</h2>
+        <div class="summary-card">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="cartSubtotal">₱335.00</span>
+          </div>
+
+          <div class="summary-divider"></div>
+          
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <span id="cartTotal" class="total-price">₱335.00</span>
+          </div>
+
+          <a href="checkout.html" class="checkout-btn-link">
+            <button type="button" class="checkout-btn">PROCEED TO CHECKOUT</button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="footer-container">
+
+        <div class="footer-col">
+          <h3 class="footer-title">CONTACT US</h3>
+          <ul class="footer-info">
+            <li>Phone Number: +63 912 345 6789</li>
+            <li><a href="mailto:kusinaexpress@example.com">Email: kusinaexpress@gmail.com</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+              <img src="images/facebook.svg" alt="Facebook" class="social-svg-img">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">STORE HOURS & LOCATION</h3>
+          <ul class="footer-info">
+            <li>Location: Rizal, Nueva Ecija</li>
+            <li>Monday – Saturday: 7:00 AM – 6:00 PM</li>
+            <li>Available for: Dine-in, Takeout, Delivery, & Catering</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">FEEDBACK</h3>
+          <form class="feedback-form" id="footerFeedbackForm" action="#" method="POST">
+            <textarea name="customer_feedback" id="customerFeedback" rows="3" placeholder="Write your feedback or review here..." required></textarea>
+            <input type="submit" class="submit-feedback-btn" value="Send Review">
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <div id="cartConfirmModal" class="food-modal">
+      <div class="food-modal-content">
+        <p id="confirmModalText" class="modal-text"></p>
+        <div class="modal-buttons">
+          <button type="button" id="confirmCancelBtn" class="modal-btn-cancel">CANCEL</button>
+          <button type="button" id="confirmActionBtn" class="modal-btn-remove">REMOVE</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="cart-script.js"></script>
+  </body>
+</html>

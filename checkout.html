@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - Kusina Express</title>
+
+    <link rel="stylesheet" type="text/css" href="checkoutstyle.css">
+    <link rel="icon" type="image/icon" href="images/kusinaexpresslogo.png">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html"><img src="images/kusinaexpresslogo.png" alt="Kusina Express Logo" class="logo-img"></a>
+        </div>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger" aria-label="Toggle Navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+
+        <!-- Main Navigation Bar Section -->
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="cart.html">CART</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Checkout Form -->
+    <div class="checkout-container">
+      <div class="checkout-card form-card">
+        <h2>Customer Details</h2>
+
+        <form action="#" method="POST" class="checkout-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g. Juan Dela Cruz" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. 09123456789" required>
+
+          <fieldset>
+            <legend>Pickup Information</legend>
+              <label for="pickup-time">Pickup Time</label>
+              <input type="time" id="pickup-time" name="pickup_time">
+          </fieldset>
+
+          <fieldset>
+            <legend>Delivery Information</legend>
+              <label for="address">Delivery Address</label>
+              <textarea id="address" name="address" rows="3" placeholder="Enter complete house number, street, barangay, and nearby landmarks..."></textarea>
+              <label for="delivery-time">Delivery Time</label>
+              <input type="time" id="delivery-time" name="delivery_time">
+          </fieldset>
+
+          <label for="instructions">Special Instructions (Optional)</label>
+          <textarea id="instructions" name="instructions" rows="2" placeholder="e.g. Please no garlic on the sisig, extra spicy broth, ring the bell twice..."></textarea>
+
+          <label>Select Payment Method</label>
+          <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="payment_method" value="cod" checked required>
+                <span class="radio-custom"></span>
+                Cash on Delivery (COD)
+              </label>
+              
+              <label class="radio-option">
+                <input type="radio" name="payment_method" value="gcash">
+                <span class="radio-custom"></span>
+                GCash
+              </label>
+                
+              <label class="radio-option">
+                <input type="radio" name="payment_method" value="maribank">
+                <span class="radio-custom"></span>
+                MariBank
+              </label>
+            </div>
+
+          <button class="place-order-btn">PLACE ORDER</button>
+        </form>
+      </div>
+
+      <!-- Order Summary Section -->
+      <div class="checkout-card summary-card">
+        <h2>Order Summary</h2>
+
+        <div class="checkout-items-list">
+          <div class="summary-item-row">
+            <div class="item-details">
+              <span class="item-qty">2x</span>
+              <span class="item-name">Pork Sisig</span>
+            </div>
+            <span class="item-price">₱140.00</span>
+          </div>
+
+          <div class="summary-item-row">
+            <div class="item-details">
+              <span class="item-qty">1x</span>
+              <span class="item-name">Papaitan</span>
+            </div>
+            <span class="item-price">₱80.00</span>
+          </div>
+
+          <div class="summary-item-row">
+            <div class="item-details">
+              <span class="item-qty">1x</span>
+              <span class="item-name">Royal Tru Orange 500ml</span>
+            </div>
+            <span class="item-price">₱35.00</span>
+          </div>
+
+          <div class="summary-item-row">
+            <div class="item-details">
+              <span class="item-qty">1x</span>
+              <span class="item-name">Coca-Cola Original 500ml</span>
+            </div>
+            <span class="item-price">₱35.00</span>
+          </div>
+
+          <div class="summary-item-row">
+            <div class="item-details">
+              <span class="item-qty">3x</span>
+              <span class="item-name">Plain Rice</span>
+            </div>
+            <span class="item-price">₱45.00</span>
+          </div>
+        </div>
+
+        <div class="summary-divider"></div>
+
+        <div class="summary-calc-row">
+          <span>Subtotal</span>
+          <span class="calc-val">₱335.00</span>
+        </div>
+
+        <div class="summary-calc-row">
+          <span>Delivery Fee</span>
+          <span class="calc-val">₱40.00</span>
+        </div>
+
+        <div class="summary-divider"></div>
+
+        <div class="summary-calc-row total-row">
+          <span>Total Amount</span>
+          <span class="total-price">₱375.00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="footer-container">
+
+        <div class="footer-col">
+          <h3 class="footer-title">CONTACT US</h3>
+          <ul class="footer-info">
+            <li>Phone Number: +63 912 345 6789</li>
+            <li><a href="mailto:kusinaexpress@example.com">Email: kusinaexpress@gmail.com</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+              <img src="images/facebook.svg" alt="Facebook" class="social-svg-img">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">STORE HOURS & LOCATION</h3>
+          <ul class="footer-info">
+            <li>Location: Rizal, Nueva Ecija</li>
+            <li>Monday – Saturday: 7:00 AM – 6:00 PM</li>
+            <li>Available for: Dine-in, Takeout, Delivery, & Catering</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">FEEDBACK</h3>
+          <form class="feedback-form" id="footerFeedbackForm" action="#" method="POST">
+            <textarea name="customer_feedback" id="customerFeedback" rows="3" placeholder="Write your feedback or review here..." required></textarea>
+            <input type="submit" class="submit-feedback-btn" value="Send Review">
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <div id="checkoutConfirmModal" class="food-modal">
+      <div class="food-modal-content">
+        <p id="checkoutModalText" class="modal-text">Would you like to confirm your order?</p>
+        <div class="modal-buttons">
+          <button type="button" id="checkoutCancelBtn" class="modal-btn-cancel">CANCEL</button>
+          <button type="button" id="checkoutActionBtn" class="modal-btn-confirm">CONFIRM</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="checkout-script.js"></script>
+  </body>
+</html>

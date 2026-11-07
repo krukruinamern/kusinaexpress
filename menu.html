@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu - Kusina Express</title>
+
+    <link rel="stylesheet" type="text/css" href="menustyle.css">
+    <link rel="icon" type="image/icon" href="images/kusinaexpresslogo.png">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html"><img src="images/kusinaexpresslogo.png" alt="Kusina Express Logo" class="logo-img"></a>
+        </div>
+      
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger" aria-label="Toggle Navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+
+        <!-- Main Navigation Bar -->
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="menu.html" class="active">MENU</a></li>
+            <li><a href="cart.html">CART</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Sub-navigation bar section -->
+    <nav class="category-subnav">
+      <div class="subnav-container">
+        <a href="#pork" class="cat-link">PORK</a>
+        <a href="#chicken" class="cat-link">CHICKEN</a>
+        <a href="#vegetables" class="cat-link">VEGETABLES</a>
+        <a href="#soup" class="cat-link">SOUP</a>
+        <a href="#desserts" class="cat-link">DESSERTS</a>
+        <a href="#drinks" class="cat-link">DRINKS</a>
+        <a href="#extras" class="cat-link">RICE & SIDES</a>
+      </div>
+    </nav>
+
+    <!--Menu tables section per category-->
+    <main class="menu-main-container">
+      <section id="pork" class="menu-section">
+        <table class="menu-table">
+          <caption>PORK DISHES</caption>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Image</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Availability</th>
+              <th class="th-action">Add</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="cell-name">Sinigang na Baboy</td>
+              <td class="cell-img"><img src="images/sinigangnababoy.png" alt="Sinigang na Baboy" class="dish-thumb"></td>
+              <td class="cell-desc">Tender pork and vegetables in a savory, sour tamarind broth.</td>
+              <td class="cell-price">₱65.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Adobong Baboy</td>
+              <td class="cell-img"><img src="images/adobongbaboy.png" alt="Adobong Baboy" class="dish-thumb"></td>
+              <td class="cell-desc">Pork cooked in soy sauce, vinegar, garlic, and spices.</td>
+              <td class="cell-price">₱50.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Tokwa’t Baboy</td>
+              <td class="cell-img"><img src="images/tokwatbaboy.png" alt="Tokwa’t Baboy" class="dish-thumb"></td>
+              <td class="cell-desc">Fried tofu and pork served with a savory vinegar-soy sauce.</td>
+              <td class="cell-price">₱50.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Pork Steak</td>
+              <td class="cell-img"><img src="images/porksteak.png" alt="Pork Steak" class="dish-thumb"></td>
+              <td class="cell-desc">Chicken simmered in soy sauce, vinegar, garlic, and bay leaves.</td>
+              <td class="cell-price">₱50.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Pork Sisig</td>
+              <td class="cell-img"><img src="images/sisig.png" alt="Sisig" class="dish-thumb"></td>
+              <td class="cell-desc">Seasoned chopped pork with onions and calamansi.</td>
+              <td class="cell-price">₱70.00</td>
+              <td class="cell-status"><span class="badge sold-out">Sold Out</span></td>
+              <td class="cell-action"><button class="add-btn" disabled>+</button></td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="6" class="tfoot-note"><b>Please note: Rice is not included and must be purchased separately.</b></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="chicken" class="menu-section">
+        <table class="menu-table">
+          <caption>CHICKEN DISHES</caption>
+          <thead>
+            <tr>
+              <th class="th-name">Name</th>
+              <th class="th-img">Image</th>
+              <th class="th-desc">Description</th>
+              <th class="th-price">Price</th>
+              <th class="th-status">Availability</th>
+              <th class="th-action">Add</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="cell-name">Adobong Manok</td>
+              <td class="cell-img"><img src="images/adobongmanok.jpg" alt="Adobong Manok" class="dish-thumb"></td>
+              <td class="cell-desc">Chicken simmered in soy sauce, vinegar, garlic, and bay leaves.</td>
+              <td class="cell-price">₱50.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Tinola</td>
+              <td class="cell-img"><img src="images/tinola.png" alt="Tinola" class="dish-thumb"></td>
+              <td class="cell-desc">Chicken in ginger broth with green papaya and leafy vegetables.</td>
+              <td class="cell-price">₱55.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Sinampalukan</td>
+              <td class="cell-img"><img src="images/sinampalukan.png" alt="Sinampalukan" class="dish-thumb"></td>
+              <td class="cell-desc">Chicken soup with a mildly sour tamarind flavor.</td>
+              <td class="cell-price">₱55.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Chicken Caldereta</td>
+              <td class="cell-img"><img src="images/chickencaldereta.png" alt="Chicken Caldereta" class="dish-thumb"></td>
+              <td class="cell-desc">Chicken cooked in a rich tomato-based sauce with vegetables.</td>
+              <td class="cell-price">₱60.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Chicken Curry</td>
+              <td class="cell-img"><img src="images/chickencurry.png" alt="Chicken Curry" class="dish-thumb"></td>
+              <td class="cell-desc">Tender chicken cooked in a creamy, mildly spiced curry sauce with potatoes and carrots.</td>
+              <td class="cell-price">₱65.00</td>
+              <td class="cell-status"><span class="badge sold-out">Sold Out</span></td>
+              <td class="cell-action"><button class="add-btn" disabled>+</button></td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="6" class="tfoot-note"><b>Please note: Rice is not included and must be purchased separately.</b></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="vegetables" class="menu-section">
+        <table class="menu-table">
+          <caption>VEGETABLE DISHES</caption>
+          <thead>
+            <tr>
+              <th class="th-name">Name</th>
+              <th class="th-img">Image</th>
+              <th class="th-desc">Description</th>
+              <th class="th-price">Price</th>
+              <th class="th-status">Availability</th>
+              <th class="th-action">Add</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="cell-name">Chopsuey</td>
+              <td class="cell-img"><img src="images/chopsuey.png" alt="Chosuey" class="dish-thumb"></td>
+              <td class="cell-desc">Mixed vegetables stir-fried in a savory sauce.</td>
+              <td class="cell-price">₱40.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Pinakbet</td>
+              <td class="cell-img"><img src="images/pinakbet.png" alt="Pinakbet" class="dish-thumb"></td>
+              <td class="cell-desc">Mixed vegetables cooked with bagoong and seasonings.</td>
+              <td class="cell-price">₱40.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Ginisang Upo</td>
+              <td class="cell-img"><img src="images/ginisangupo.jpg" alt="Ginisang Upo" class="dish-thumb"></td>
+              <td class="cell-desc">Sautéed bottle gourd with garlic, onion, and tomato.</td>
+              <td class="cell-price">₱40.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Kare-Kare</td>
+              <td class="cell-img"><img src="images/karekare.png" alt="Kare-Kare" class="dish-thumb"></td>
+              <td class="cell-desc">Tender meat and vegetables cooked in a rich, savory peanut sauce, traditionally served with bagoong on the side.</td>
+              <td class="cell-price">₱60.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Ginisang Ampalaya</td>
+              <td class="cell-img"><img src="images/ginisangampalaya.png" alt="Ginisang Ampalaya" class="dish-thumb"></td>
+              <td class="cell-desc">Bitter melon sautéed with egg, tomatoes, and onions.</td>
+              <td class="cell-price">₱40.00</td>
+              <td class="cell-status"><span class="badge sold-out">Sold Out</span></td>
+              <td class="cell-action"><button class="add-btn" disabled>+</button></td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="6" class="tfoot-note"><b>Please note: Rice is not included and must be purchased separately.</b></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="soup" class="menu-section">
+        <table class="menu-table">
+          <caption>SOUP DISHES</caption>
+          <thead>
+            <tr>
+              <th class="th-name">Name</th>
+              <th class="th-img">Image</th>
+              <th class="th-desc">Description</th>
+              <th class="th-price">Price</th>
+              <th class="th-status">Availability</th>
+              <th class="th-action">Add</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="cell-name">Bulalo Special</td>
+              <td class="cell-img"><img src="images/bulalo.jpeg" alt="Bulalo" class="dish-thumb"></td>
+              <td class="cell-desc">Slow-cooked beef shank and bone marrow broth with corn on the cob and cabbage.</td>
+              <td class="cell-price">₱80.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Nilagang Baboy</td>
+              <td class="cell-img"><img src="images/nilagangbaboy.jpg" alt="Nilagang Baboy" class="dish-thumb"></td>
+              <td class="cell-desc"> Pork simmered in a light savory broth with cabbage, potatoes, and corn.</td>
+              <td class="cell-price">₱65.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Miswa Soup</td>
+              <td class="cell-img"><img src="images/miswa.jpg" alt="Miswa" class="dish-thumb"></td>
+              <td class="cell-desc">Warm savory broth with miswa noodles and vegetables.</td>
+              <td class="cell-price">₱50.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Papaitan Beef</td>
+              <td class="cell-img"><img src="images/papaitan.jpg" alt="Papaitan" class="dish-thumb"></td>
+              <td class="cell-desc">Traditional bitter-savory Ilocano soup made with beef innards and ginger.</td>
+              <td class="cell-price">₱80.00</td>
+              <td class="cell-status"><span class="badge sold-out">Sold Out</span></td>
+              <td class="cell-action"><button class="add-btn" disabled>+</button></td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="6" class="tfoot-note"><b>Please note: Rice is not included and must be purchased separately.</b></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="desserts" class="menu-section">
+        <table class="menu-table">
+          <caption>DESSERTS</caption>
+          <thead>
+            <tr>
+              <th class="th-name">Name</th>
+              <th class="th-img">Image</th>
+              <th class="th-desc">Description</th>
+              <th class="th-price">Price</th>
+              <th class="th-status">Availability</th>
+              <th class="th-action">Add</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="cell-name">Turon</td>
+              <td class="cell-img"><img src="images/turon.jpg" alt="Turon" class="dish-thumb"></td>
+              <td class="cell-desc">Crisp, golden spring rolls filled with sweet banana and jackfruit, lightly glazed in caramelized brown sugar.</td>
+              <td class="cell-price">₱10.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Leche Flan</td>
+              <td class="cell-img"><img src="images/lecheflan.jpg" alt="Leche Flan" class="dish-thumb"></td>
+              <td class="cell-desc">A rich, velvety egg custard topped with a glistening layer of amber caramel syrup.</td>
+              <td class="cell-price">₱30.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="6" class="tfoot-note"><b>Please note: Rice is not included and must be purchased separately.</b></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="drinks" class="menu-section">
+        <table class="menu-table">
+          <caption>DRINKS & BEVERAGES</caption>
+          <thead>
+            <tr>
+              <th class="th-name">Name</th>
+              <th class="th-img">Image</th>
+              <th class="th-desc">Description</th>
+              <th class="th-price">Price</th>
+              <th class="th-status">Availability</th>
+              <th class="th-action">Add</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="cell-name">Coca-Cola</td>
+              <td class="cell-img"><img src="images/coca-cola.jpg" alt="Coca-Cola" class="dish-thumb"></td>
+              <td class="cell-desc">Coca-Cola Original 500ml.</td>
+              <td class="cell-price">₱35.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Sprite</td>
+              <td class="cell-img"><img src="images/sprite.jpg" alt="Sprite" class="dish-thumb"></td>
+              <td class="cell-desc">Sprite Lemon-Lime 500ml</td>
+              <td class="cell-price">₱35.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Royal</td>
+              <td class="cell-img"><img src="images/royal.jpg" alt="Royal" class="dish-thumb"></td>
+              <td class="cell-desc">Royal Tru Orange 500ml</td>
+              <td class="cell-price">₱35.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Mineral Water</td>
+              <td class="cell-img"><img src="images/mineralwater.jpg" alt="Mineral Water" class="dish-thumb"></td>
+              <td class="cell-desc">Purified Mineral Water 500ml</td>
+              <td class="cell-price">₱25.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button class="add-btn">+</button></td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="6" class="tfoot-note"><b>Please note: Rice is not included and must be purchased separately.</b></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="extras" class="menu-section">
+        <table class="menu-table">
+          <caption>RICE & SIDES</caption>
+          <thead>
+            <tr>
+              <th class="th-name">Name</th>
+              <th class="th-img">Image</th>
+              <th class="th-desc">Description</th>
+              <th class="th-price">Price</th>
+              <th class="th-status">Availability</th>
+              <th class="th-action">Add</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="cell-name">Plain Rice</td>
+              <td class="cell-img"><img src="images/plainrice.jpg" alt="Plain Rice" class="dish-thumb"></td>
+              <td class="cell-desc">Steamed Jasmine white rice, cooked fresh daily.</td>
+              <td class="cell-price">₱15.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button type="button" class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Garlic Fried Rice</td>
+              <td class="cell-img"><img src="images/garlicrice.jpg" alt="Garlic Fried Rice" class="dish-thumb"></td>
+              <td class="cell-desc">Fragrant sinangag tossed with toasted garlic chips.</td>
+              <td class="cell-price">₱20.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button type="button" class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Atchara Side</td>
+              <td class="cell-img"><img src="images/atchara.jpg" alt="Atchara" class="dish-thumb"></td>
+              <td class="cell-desc">Pickled grated papaya, carrots, and sweet bell peppers.</td>
+              <td class="cell-price">₱25.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button type="button" class="add-btn">+</button></td>
+            </tr>
+            <tr>
+              <td class="cell-name">Free Sabaw</td>
+              <td class="cell-img"><img src="images/freesoup.jpg" alt="Extra Sabaw" class="dish-thumb"></td>
+              <td class="cell-desc">
+                <label for="soup-select" class="select-label">Choose your free broth:</label>
+                <select name="soup_type" id="soup-select" class="soup-dropdown">
+                  <option value="sinigang" selected>Sinigang Broth (Sour Tamarind)</option>
+                  <option value="bulalo">Bulalo Broth (Rich Beef Bone)</option>
+                  <option value="tinola">Tinola Broth (Ginger Chicken)</option>
+                  <option value="nilaga">Nilaga Broth (Savory Beef)</option>
+                </select>
+              </td>
+              <td class="cell-price">₱0.00</td>
+              <td class="cell-status"><span class="badge available">Available</span></td>
+              <td class="cell-action"><button type="button" class="add-btn">+</button></td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="6" class="tfoot-note"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+
+    <!--Footer section-->
+    <footer class="site-footer">
+      <div class="footer-container">
+        
+        <div class="footer-col">
+          <h3 class="footer-title">CONTACT US</h3>
+          <ul class="footer-info">
+            <li>Phone Number: +63 912 345 6789</li>
+            <li><a href="mailto:kusinaexpress@example.com">Email: kusinaexpress@gmail.com</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+              <img src="images/facebook.svg" alt="Facebook" class="social-svg-img">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">STORE HOURS & LOCATION</h3>
+          <ul class="footer-info">
+            <li>Location: Rizal, Nueva Ecija</li>
+            <li>Monday – Saturday: 7:00 AM – 6:00 PM</li>
+            <li>Available for: Dine-in, Takeout, Delivery, & Catering</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">FEEDBACK</h3>
+          <form class="feedback-form" id="footerFeedbackForm" action="#" method="POST">
+            <textarea name="customer_feedback" id="customerFeedback" rows="3" placeholder="Write your feedback or review here..." required></textarea>
+            <input type="submit" class="submit-feedback-btn" value="Send Review">
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <div id="foodModal" class="food-modal" style="display: none; position: fixed; z-index: 1000;">
+      <div class="food-modal-content">
+        <button id="modalCloseButton" class="modal-close-btn">&times;</button>
+        <img id="modalImage" src="" alt="" class="modal-img">
+        <h3 id="modalName"></h3>
+        <p id="modalDescription"></p>
+        <p id="modalPrice"></p>
+        <p id="modalAvailability"></p>
+        <p><strong>Ingredients:</strong> <span id="modalIngredients"></span></p>
+        <p><strong>Allergens:</strong> <span id="modalAllergens"></span></p>
+      </div>
+    </div>
+
+    <script src="menuscript.js"></script>
+  </body>
+</html>
